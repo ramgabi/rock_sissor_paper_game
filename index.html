@@ -1,0 +1,60 @@
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mini Game</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="intro">
+      <h1>ROCK SISSOR PAPER GAME</h1>
+    </div>
+    <div class="button-list">
+      <button class="start-btn">새게임</button>
+      <button class="menual-btn">게임설명</button>
+    </div>
+    <div class="game-menual">
+      <h2>게임설명</h2>
+      <ol class="menual-list">
+        <li>1. 가위바위보 그림이 그려진 카드 중 하나를 선택하세요.</li>
+        <li>2. 플레이어가 카드를 고르고나면 컴퓨터도 자동으로 카드를 고릅니다.</li>
+        <li>3. 카드에 따라서 승자와 패자가 결정됩니다.</li>
+        <li>4. 승리 시에는 연승이 하나씩 추가됩니다.</li>
+        <li>5. 패배 시에는 모든 연승을 잃고, 무승부 시에는 변동없습니다.</li>
+      </ol>
+      <button class="exit">닫기</button>
+    </div>
+    <div class="game-table">
+      <div class="computer-card">
+        <img src="img/card_back.jpg" width="80" alt="비밀카드" class="computer-card-img"/>
+      </div>
+      <div class="user-card">
+        <ul class="card-list">
+          <li class="sissor card"><img src="img/sissor_card.jpg" width="80"  alt="가위카드"/></li>
+          <li class="rock card"><img src="img/rock_card.jpg" width="80"  alt="바위카드"/></li>
+          <li class="paper card"><img src="img/paper_card.jpg" width="80"  alt="보카드"/></li>
+        </ul>
+      </div>
+      <div class="game-message">
+        <p class="win">게임에서 승리했습니다!</p>
+        <p class="draw">게임에서 비겼습니다!</p>
+        <p class="lose">게임에서 패배했습니다!</p>
+      </div>
+      <div class="score-message">
+        <p class="now-score">현재 <span class="now-score-num">0</span>연승입니다.</p>
+        <p class="best-score">최고기록은 <span class="best-score-num">0</span>연승입니다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

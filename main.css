@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/*font*/
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+/*body {
+-webkit-font-smoothing: antialiased;
+-webkit-text-shadow: rgba(0,0,0,.01) 0 0 0.45px;
+-webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+text-shadow: rgba(0,0,0,.01) 0 0 0.45px;
+-moz-osx-font-smoothing: grayscale;
+}*/
+
+/*reset*/
+
+body,div,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,p,span,strong,b,em,address,img,input,select,fieldset,legend,caption,a,form,table,tbody,tfoot,thead,tr,th,td,summary,button,small,header,footer,section,article,nav,aside,video{margin:0; padding:0;box-sizing:border-box}
+
+header,footer,section,article,aside,nav{display:block}
+h1,h2,h3,h4,h5,h6{font-size:1em}
+
+body,select,input{font-size:12px; font-family:'NanumSquare','맑은 고딕','돋움',Dotum,sans-serif; color:#333}
+
+dl,ol,ul{list-style:none}
+
+table{border-collapse:collapse}
+
+img,fieldset{border:0 none}
+
+img,input,select,button{vertical-align:middle}
+
+a:link,
+a:visited{color:#333; text-decoration:none}
+
+a:hover,
+a:active,
+a:focus{color:#333; text-decoration:underline}
+
+address,em{font-style:normal}
+
+.clearfix:after{content:''; display:block; clear:both}
+.clearfix{zoom:1}
+
+.skip,legend,caption{width:1px;height:1px;font-size:0;line-height:0;position:absolute;left:-9999px;overflow:hidden}
+
+
+/* reset end */
+
+#wrapper{width:100vw;height:100vh;text-align:center}
+.intro{width:100%;padding:35vh 0 0}
+.intro h1{font-size:32px;margin-bottom:15px}
+
+.button-list{margin-bottom:30px}
+.button-list button{width:70px;height:70px;border-radius:50%;margin:0 15px;border:0;background-color:rgb(70, 88, 255);color:#fff;font-size:14px;outline:none;cursor:pointer}
+
+.game-menual{width:100vw;height:100vh;position:fixed;top:0;left:0;z-index:99;background-color:#fff;padding-top:30vh;display:none}
+.game-menual h2{font-size:36px;margin-bottom:30px}
+.game-menual .menual-list{font-size:18px;line-height:2.5}
+.game-menual .exit{font-size:0;width:40px;height:40px;background-color:transparent;border:none;margin-top:30px;position:relative;outline:none}
+.game-menual .exit:before{content:'';display:block;width:1px;height:40px;background-color:#333;position:absolute;top:0;left:50%;transform:rotate(45deg)}
+.game-menual .exit:after{content:'';display:block;width:1px;height:40px;background-color:#333;position:absolute;top:0;left:50%;transform:rotate(-45deg)}
+
+.game-table{display:none;opacity:0}
+.computer-card{width:100%;text-align:center;margin-bottom:20px}
+
+.card-list{overflow:hidden;width:420px;margin:0 auto;margin-bottom:30px}
+.card{float:left;width:120px;margin:0 10px;cursor:pointer}
+
+.game-message,.score-message{font-size:18px;line-height:1.7}
+.game-message p{display:none}
+.game-message p.show{display:block}
+
+.score-message span{color:rgb(214, 0, 0)}
